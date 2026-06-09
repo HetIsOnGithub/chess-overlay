@@ -1,0 +1,9 @@
+engines/stockfish.exe
+engines/maia/
+stockfish-windows-x86-64-avx2/
+
+__pycache__/
+*.pyc
+venv/
+dist/
+build/

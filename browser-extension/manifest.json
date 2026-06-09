@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Chess Overlay Bridge",
+  "version": "1.0",
+
+  "permissions": ["storage"],
+
+  "host_permissions": ["https://www.chess.com/*", "http://127.0.0.1:5000/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.chess.com/*"],
+      "js": ["content.js","arrow.js"]
+    }
+  ]
+}
